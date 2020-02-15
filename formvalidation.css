@@ -33,6 +33,10 @@ button:active{
 body{
     background: rgb(255,255,255);
     background: linear-gradient(68deg, rgba(255,255,255,1) 32%, rgba(255,242,197,1) 70%);
+
+    opacity: 0; 
+    transition: opacity 1s; 
+
 }
 
 input[readonly]{
@@ -46,3 +50,4 @@ input[readonly]{
     font-size: medium;
     line-height: 40px;
 }
+

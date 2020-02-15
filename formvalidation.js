@@ -30,6 +30,8 @@ function success(){
 }
 
 function currentDate(){
+    document.body.style.opacity='1';
+
     n = new Date();
     year = n.getFullYear();
     month = n.getMonth() + 1;
