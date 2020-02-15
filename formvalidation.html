@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="formvalidation.css">
+    <script src="formvalidation.js"></script>
+</head>
+<body onload="currentDate()">
+    <div id="box">
+    <fieldset>
+        
+        <legend>Events Creation</legend>
+        <form id="eventForm" name="eventForm" onsubmit="return validation()">
+            <label>Event type: 
+                <select name="events" id="events">
+                    <option id="initial" value="blank" selected disabled hidden>--Choose One--</option>
+                    <option id="op1">Private</option>
+                    <option id="op2">Corporate</option>
+                    <option id="op3">Charity</option>
+                </select>
+            </label> <br>
+            <label>Event title: <input type="text" id="eventTitle" name="eventTitle" placeholder="Input the Event Title here" size="80" maxlength="80" > </label> <br>
+            <label>Event date: <input type="date" id="eventDate" name="eventDate" > to <input type="date" id="eventDate2" name="eventDate2"></label> <br>
+            <label>Posting date:  <input type="text" id="dateToday" name="dateToday" readonly > </label><br>
+            <input type="checkbox" name="cb1"><label>Is Registration Required?</label> <br>
+            <input type="checkbox" name="cb2"><label>Is this event associated with any Family Programs?</label> <br>
+            <input type="checkbox" name="cb3"><label>Upon Registration Completion, Are Users to Receive an Auto Generated Email?</label> <br>
+            <input type="checkbox" name="cb4"><label>Is There a point of contact?</label> <br>
+            <input type="checkbox" name="cb5"><label>Is There a Hosting Command Point of Contact??</label> <br>
+            <button type="submit" >Submit</button>
+            <button type="button" onclick="window.location.reload(false)">Cancel</button>
+        </form>
+
+    </fieldset>
+    </div>
+</body>
+</html>

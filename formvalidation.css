@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css?family=Tomorrow:300,400,500,600&display=swap');
+
+legend{
+    font-weight: 500;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+label, form {
+    font-weight: 400;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: medium;
+    line-height: 40px;
+}
+
+
+button{
+    font-weight: 400;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: 12px;
+}
+
+button:hover{
+    border-color: black;
+    border-width: 1px;
+}
+
+button:active{
+    background-color: #fff5d9;
+}
+
+body{
+    background: rgb(255,255,255);
+    background: linear-gradient(68deg, rgba(255,255,255,1) 32%, rgba(255,242,197,1) 70%);
+}
+
+input[readonly]{
+    cursor: initial;
+    border: none;
+}
+
+#dateToday{
+    font-weight: 600;
+    font-family: 'Tomorrow', sans-serif;
+    font-size: medium;
+    line-height: 40px;
+}
